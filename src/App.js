@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { Title } from "./components/Title/Title";
+import "./App.scss";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Title amount={23}>Welcome to our App!</Title>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio repellat
+        labore rem vel, quis voluptates commodi mollitia officiis molestias
+        totam.
+      </p>
+      <button>Find out more!</button>
+    </Fragment>
   );
-}
-
-export default App;
+};
