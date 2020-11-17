@@ -1,5 +1,5 @@
 import './Title.scss';
-import PropTypes from 'prop-types';
+import PT from 'prop-types';
 
 export const Title = ({ children, amount }) => {
     // for return => null, false, true, 23, 'Hello', []
@@ -12,5 +12,5 @@ export const Title = ({ children, amount }) => {
 };
 
 Title.propTypes = {
-    amount: PropTypes.number.isRequired
+    amount: PT.number.isRequired
 };
